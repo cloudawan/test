@@ -1,0 +1,28 @@
+{
+  "kind": "ReplicationController",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "flask",
+    "labels": {
+      "name": "flask"
+    }
+  },
+  "spec": {
+    "replicas": 1,
+    "selector": {"name": "flask"},
+    "template": {
+      "metadata": {
+        "labels": {
+          "name": "flask"
+        }
+      },
+      "spec": {
+         "containers": [{
+           "name": "flask",
+           "image": "private-repository:31000/flask",
+           "ports": [{"name": "http-server", "containerPort": 8080}]
+         }]
+       }
+    }
+  }
+}
