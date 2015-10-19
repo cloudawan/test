@@ -14,11 +14,10 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     try:
-<<<<<<< HEAD
-        return '{"Flask":"hello2"}'
-=======
-        return '{"Flask":"hello world! VERSION:11 8/16/2015 1:35 PM"}'
->>>>>>> 75a7f74289f19d1340ba27d7e0e7bd086774b09b
+
+
+        return '{"Flask":"hello world! VERSION:11 10/19/2015 1:35 PM"}'
+
     except Exception as e:
         return "Error"
 
