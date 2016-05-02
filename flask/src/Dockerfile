@@ -9,7 +9,7 @@ RUN     pip install Flask
 
 
 # Install curl
-RUN     yim install -y curl
+RUN     yum install -y curl
 
 # Bundle app source
 COPY . /src
