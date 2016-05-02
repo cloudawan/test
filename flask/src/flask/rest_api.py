@@ -14,7 +14,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     try:
-        return '{"Flask":"hello world! demo2 VERSION:20 04/27/2016 17:39:39"}' 
+        return '{"Flask":"hello world!"}' 
     except Exception as e:
         return "Error"
 
