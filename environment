@@ -1,4 +1,5 @@
 {
 	"data1":"value1",
-	"data2":"value2"
+	"data2":"value2",
+	"SERVICE_NAME":"default"
 }
